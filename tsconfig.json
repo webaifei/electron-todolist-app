@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+     "strictNullChecks": true,
+     "module": "commonjs",
+     "esModuleInterop": true,
+     "importHelpers": true,
+     "allowSyntheticDefaultImports": true,
+     "target": "es6",
+     "jsx": "react",
+     "lib": [
+      "es2017",
+      "dom"
+     ]
+  },
+  "include": [
+      "src" // write ts in src, you can define your own dir
+  ]
+}
