@@ -4,6 +4,7 @@
      "module": "commonjs",
      "esModuleInterop": true,
      "importHelpers": true,
+     "allowJs": true,
      "allowSyntheticDefaultImports": true,
      "experimentalDecorators": true,
      "target": "es6",

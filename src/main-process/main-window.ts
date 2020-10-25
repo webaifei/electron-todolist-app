@@ -1,5 +1,4 @@
-
-import { BrowserWindow } from 'electron';
+import { BrowserWindow, app } from 'electron';
 
 export const createWindow = () => {
   const win = new BrowserWindow({
@@ -16,6 +15,7 @@ export const createWindow = () => {
       allowRunningInsecureContent: false,
       nativeWindowOpen: false,
       nodeIntegration: true,
+      // preload: `http://localhost:1212/dist/preload${app.isPackaged ? '.prod' : '.dev'}.js`,
     },
   });
   win.webContents.openDevTools();

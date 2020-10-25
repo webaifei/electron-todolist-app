@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
+const path = require('path');
 
 const isProd = process.env.NODE_ENV === 'production';
 const cssLoader = {
@@ -67,4 +68,9 @@ module.exports = {
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn/),
     new webpack.NamedModulesPlugin(),
   ],
+  // resolve: {
+  //   alias: {
+  //     '@src': path.resolve(__dirname, '../../src')
+  //   }
+  // }
 };

@@ -1,0 +1,83 @@
+Arguments: 
+  /Users/oker/.nvm/versions/node/v12.16.1/bin/node /Users/oker/.nvm/versions/node/v12.16.1/bin/yarn add electron -D
+
+PATH: 
+  /Users/oker/.nvm/versions/node/v12.16.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS:/Users/oker/.nvm/versions/node/v12.16.1/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EINVAL: invalid argument, unlink '/Users/oker/projects/tmp/electron/electron-todolist/node_modules/browserify-sign/node_modules/bn.js'
+
+npm manifest: 
+  {
+    "name": "webpack4-ts-environment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "hot-dev": "nodemon",
+      "start-main-dev": "cross-env HOT=1 NODE_ENV=development electron -r @babel/register ./src/entry.dev.js",
+      "dev": "cross-env START_HOT=1 webpack-dev-server --config ./config/webpack/webpack.config.renderer.dev.babel.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.6.4",
+      "@babel/plugin-proposal-class-properties": "^7.12.1",
+      "@babel/plugin-proposal-decorators": "^7.12.1",
+      "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+      "@babel/plugin-transform-runtime": "^7.7.4",
+      "@babel/preset-env": "^7.6.3",
+      "@babel/preset-react": "^7.7.4",
+      "@babel/preset-typescript": "^7.7.4",
+      "@babel/register": "^7.6.2",
+      "@types/node": "^12.11.1",
+      "@types/react": "^16.9.53",
+      "@types/react-dom": "^16.9.8",
+      "@typescript-eslint/eslint-plugin": "^4.5.0",
+      "@typescript-eslint/parser": "^4.5.0",
+      "awesome-typescript-loader": "^5.2.1",
+      "babel-loader": "^8.0.6",
+      "cross-env": "^6.0.3",
+      "electron": "6.0.0",
+      "eslint": "^7.12.0",
+      "eslint-plugin-react": "^7.21.5",
+      "mini-css-extract-plugin": "^0.8.0",
+      "nodemon": "^1.19.4",
+      "react": "^16.14.0",
+      "react-dom": "^16.14.0",
+      "react-redux": "^7.1.3",
+      "source-map-loader": "^0.2.4",
+      "ts-node": "^8.4.1",
+      "typescript": "^3.6.4",
+      "webpack": "^4.41.2",
+      "webpack-cli": "^3.3.9",
+      "webpack-dev-server": "^3.8.2",
+      "webpack-merge": "^4.2.2"
+    },
+    "dependencies": {
+      "@fluentui/react": "^7.147.1",
+      "core-js": "^3.6.5",
+      "express": "^4.17.1",
+      "mobx": "^6.0.1",
+      "mobx-react": "^7.0.0",
+      "react": "^16.14.0",
+      "react-dom": "^16.14.0",
+      "redux": "^4.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

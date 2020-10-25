@@ -4,7 +4,7 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        targets: { electron: require('electron/package.json').version },
+        targets: { electron: "10.1.5" },
         useBuiltIns: 'usage',
         modules: 'commonjs',
       },
