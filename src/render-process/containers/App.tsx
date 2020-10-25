@@ -4,11 +4,12 @@ import Header from '../components/Header'
 import TodoList from '../components/TodoList'
 
 const App = () => (
-  <div>
-    <Header/>
-    <TodoList/>
-    <Footer/>
+  <div className="ms-Grid" dir="ltr">
+    <Header />
+    <TodoList />
+    <Footer />
   </div>
+
 )
 
 export default App
