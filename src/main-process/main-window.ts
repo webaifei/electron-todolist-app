@@ -1,6 +1,11 @@
-import { BrowserWindow, app } from 'electron';
+import { DB_ACTION } from './../render-process/utils/db/index';
+import { BrowserWindow, app , ipcMain} from 'electron';
+import { IpcMainEvent } from 'electron/main';
 
 export const createWindow = () => {
+  ipcMain.on(DB_ACTION.ADD, (event: IpcMainEvent, args)=> {
+    console.log("createWindow -> args", args)
+  })
   const win = new BrowserWindow({
     show: true,
     width: 890,
@@ -20,4 +25,6 @@ export const createWindow = () => {
   });
   win.webContents.openDevTools();
   win.loadURL(`file://${__dirname}/../index.html`);
+
+
 };

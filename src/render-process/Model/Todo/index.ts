@@ -7,7 +7,7 @@ export interface ITodo {
   id: string;
   text: string;
   isDone: boolean;
-  timestmp: Date
+  timestmp?: number;
 }
 export default class Todo {
   @observable id;

@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@fluentui/react": "^7.147.1",
-    "core-js": "^3.6.5",
+    "core-js": "^2.6.11",
     "express": "^4.17.1",
     "lowdb": "^1.0.0",
     "mobx": "^6.0.1",
