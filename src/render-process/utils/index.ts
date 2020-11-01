@@ -1,6 +1,2 @@
-import db from "./db"
+export * from "./db"
 
-
-export default {
-  db
-}

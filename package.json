@@ -50,6 +50,7 @@
     "@fluentui/react": "^7.147.1",
     "core-js": "^2.6.11",
     "express": "^4.17.1",
+    "log4js": "^6.3.0",
     "lowdb": "^1.0.0",
     "mobx": "^6.0.1",
     "mobx-react": "^7.0.0",
